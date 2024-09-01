@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂房確認 - 奕甫商旅</title>
+    <link rel="stylesheet" href="hotel-booking-css.css">
+    <style>
+        .confirmation-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .confirmation-header {
+            text-align: center;
+            color: #007bff;
+        }
+        .confirmation-details {
+            margin-top: 20px;
+        }
+        .confirmation-details p {
+            margin-bottom: 10px;
+        }
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../img/logo.svg" alt="奕甫集團 Logo" width="150" height="75">
+            <ul>
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="rooms.html">客房</a></li>
+                <li><a href="booking.html">訂房</a></li>
+                <li><a href="../index.html#contact">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="confirmation-container">
+            <h1 class="confirmation-header">訂房確認</h1>
+            <div class="confirmation-details">
+                <p>親愛的客人，您的訂房已成功完成！</p>
+                <p>我們已經收到您的訂房請求，並將盡快處理。您將在24小時內收到一封確認電子郵件，其中包含您的訂房詳情。</p>
+                <p>如果您有任何疑問或需要修改訂單，請隨時與我們聯繫。</p>
+                <p>訂單號：<strong id="bookingNumber">BOK12345</strong></p>
+                <p>感謝您選擇汎藍台中，期待您的蒞臨！</p>
+            </div>
+            <a href="../index.html" class="cta-button back-home">返回首頁</a>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contact">
+            <h3>聯繫我們</h3>
+            <p>電話：(04) 2345-6789</p>
+            <p>Email：info@milanhotel.com</p>
+            <p>地址：台中市中區台灣大道二段123號</p>
+        </div>
+        <p>&copy; 2024 汎藍台中. 保留所有權利。</p>
+    </footer>
+
+    <script>
+        // 生成隨機訂單號
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookingNumber = 'BOK' + Math.floor(10000 + Math.random() * 90000);
+            document.getElementById('bookingNumber').textContent = bookingNumber;
+        });
+    </script>
+</body>
+</html>

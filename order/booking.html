@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奕甫商旅 - 訂房</title>
+    <link rel="stylesheet" href="hotel-booking-css.css">
+</head>
+<body>
+    <header>
+        <!-- 導航欄與首頁相同 -->
+    </header>
+
+    <main>
+        <h1>訂房</h1>
+        <form id="booking-form" action="hotel-booking-confirmation.html">
+            <label for="room-type">房型：</label>
+            <select id="room-type" name="room-type" required>
+                <option value="">請選擇房型</option>
+                <option value="single">標準單人房</option>
+                <option value="double">豪華雙人房</option>
+                <option value="family">家庭套房</option>
+            </select>
+
+            <label for="check-in">入住日期：</label>
+            <input type="date" id="check-in" name="check-in" required>
+
+            <label for="check-out">退房日期：</label>
+            <input type="date" id="check-out" name="check-out" required>
+
+            <label for="guests">客人數量：</label>
+            <input type="number" id="guests" name="guests" min="1" max="6" required>
+
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email：</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">電話：</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit" class="cta-button">確認訂房</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- 頁腳與首頁相同 -->
+    </footer>
+
+    <script src="../hotel-booking-js.js"></script>
+</body>
+</html>

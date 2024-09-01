@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <!-- 建築物輪廓 -->
+  <path d="M30 80 L50 30 L150 30 L170 80 Z" fill="#f0f0f0" stroke="#333" stroke-width="3"/>
+  
+  <!-- 窗戶 -->
+  <rect x="60" y="40" width="20" height="20" fill="#6495ED"/>
+  <rect x="90" y="40" width="20" height="20" fill="#6495ED"/>
+  <rect x="120" y="40" width="20" height="20" fill="#6495ED"/>
+  
+  <!-- 門 -->
+  <rect x="90" y="60" width="20" height="20" fill="#333"/>
+  
+  <!-- 屋頂 -->
+  <path d="M40 30 L100 10 L160 30" fill="none" stroke="#333" stroke-width="3"/>
+  
+  <!-- 波浪代表"藍" -->
+  <path d="M10 90 Q30 80 50 90 Q70 100 90 90 Q110 80 130 90 Q150 100 170 90 Q190 80 210 90" fill="none" stroke="#6495ED" stroke-width="3"/>
+  
+  <!-- 文字 -->
+  <text x="100" y="95" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">奕甫集團</text>
+</svg>

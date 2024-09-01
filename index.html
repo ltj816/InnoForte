@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奕甫商旅 - 精品旅館</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/logo.svg" alt="奕甫商旅 Logo" width="150" height="50">
+            <ul>
+                <li><a href="#about">關於我們</a></li>
+                <li><a href="#rooms">客房介紹</a></li>
+                <li><a href="#facilities">服務設施</a></li>
+                <li><a href="#location">交通指南</a></li>
+                <li><a href="#contact">聯繫我們</a></li>
+            </ul>
+            
+            <div id="weather-forecast">
+                <!-- 天氣數據將通過 JavaScript 動態插入這裡 -->
+            </div>
+            <div class="language-select">
+                <select title="語言選擇">
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                    <option value="jp">日本語</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>歡迎蒞臨奕甫商旅</h1>
+            <p>您在高雄的精緻住宿體驗</p>
+            <a href="order/hotel-booking-index.html" class="cta-button">立即預訂</a>
+	    
+        
+        </section>
+        <section id="about">
+            <h2>關於我們</h2>
+            <p>奕甫商旅是一間融合現代設計與在地文化的精品旅館...</p>
+        </section>
+        <section id="rooms">
+            <h2>客房介紹</h2>
+            <div class="room">
+                <img src="img/room2.jpg" alt="豪華雙人房">
+                <h3>豪華雙人房</h3>
+                <p>寬敞舒適的空間，適合情侶或商務旅客...</p>
+            </div>
+            <!-- 可以添加更多房型 -->
+        </section>
+        <section id="facilities">
+            <h2>服務設施</h2>
+            <ul>
+                <li>24小時前台服務</li>
+                <li>免費高速Wi-Fi</li>
+                <li>健身中心</li>
+                <li>商務中心</li>
+            </ul>
+        </section>
+        <section id="location">
+            <h2>交通指南</h2>
+            <p>我們位於高雄市中心，距離主要景點僅數分鐘車程...</p>
+            <img src="img/map.png" alt="酒店位置地圖">
+        </section>
+        <section id="contact">
+            <h2>聯繫我們</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="姓名" required>
+                <input type="email" id="email" name="email" placeholder="電子郵件" required>
+                <textarea id="message" name="message" placeholder="留言" required></textarea>
+                <button type="submit">發送</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 奕甫商旅. 保留所有權利。</p>
+        <div class="social-icons">
+            <!-- 添加社交媒體圖標 -->
+        </div>
+    </footer>
+    <script src="config.js"></script>
+    <script src="weather.js"></script>
+    <script src="hotel-booking-js.js"></script>
+</body>
+</html>
